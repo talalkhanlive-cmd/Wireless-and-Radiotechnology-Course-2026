@@ -43,6 +43,14 @@ The same LTE cell was used in both measurements.
 | Near window | 4G LTE | -79 | -12 | 8 | 452 |
 | Indoors (center) | 4G LTE | -83 | -14 | 3 | 452 |
 
+## Screenshots (Field Test Mode)
+
+### Near window (better signal)
+![Near Window](WhatsApp Image 2026-01-27 at 09.16.41.jpeg)
+
+### Indoors (center of building)
+![Indoors Center](RADIO1.jpeg)
+
 Screenshots from iPhone Field Test Mode are included in the repository.
 
 ## 6. Analysis
