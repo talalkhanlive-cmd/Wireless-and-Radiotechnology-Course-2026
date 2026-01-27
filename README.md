@@ -46,7 +46,7 @@ The same LTE cell was used in both measurements.
 ## Screenshots (Field Test Mode)
 
 ### Near window (better signal)
-![Near Window](WhatsApp Image 2026-01-27 at 09.16.41.jpeg)
+![Near Window](12.jpeg)
 
 ### Indoors (center of building)
 ![Indoors Center](RADIO1.jpeg)
