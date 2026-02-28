@@ -1,0 +1,70 @@
+Introduction
+
+Wireless communication technologies play a key role in modern digital systems, especially in IoT, mobile networks, and industrial applications. This assignment explores different wireless products, their manufacturers, and the technologies they use. The aim is to understand how various wireless standards are applied in real-world products.
+
+1. LoRaWAN Gateway
+
+Manufacturer: Kerlink
+Product: Wirnet iStation
+
+A LoRaWAN gateway is used to connect low-power IoT devices to a central network server. It enables long-distance communication while consuming very little energy. The Kerlink Wirnet iStation is designed for outdoor and industrial environments and offers strong resistance to interference, making it suitable for large-scale IoT deployments.
+
+2. Zigbee Module
+
+Manufacturer: Digi International
+Product: XBee3 Zigbee 3.0
+
+Zigbee modules are commonly used for short-range, low-power wireless communication in mesh networks. They are widely applied in smart homes and industrial monitoring systems. The Digi XBee3 module is compact and flexible, allowing support for multiple communication protocols using the same hardware platform.
+
+3. Wi-Fi 6 Chipset
+
+Manufacturer: Qualcomm
+Product: FastConnect 6900
+
+The Qualcomm FastConnect 6900 chipset supports the Wi-Fi 6 (802.11ax) standard, which improves speed, efficiency, and network performance. It is designed for modern mobile devices and supports advanced technologies such as dual-band simultaneous operation and high-order modulation, enabling high data rates with low latency.
+
+4. NB-IoT Module
+
+Manufacturer: Quectel
+Product: BC660K-GL
+
+NB-IoT modules are optimized for massive IoT applications that require long battery life and deep indoor coverage. The Quectel BC660K-GL is a compact cellular module that supports multiple frequency bands while maintaining very low power consumption, making it suitable for smart metering and remote monitoring.
+
+5. Sigfox Device
+
+Manufacturer: UnaBiz
+Product: Sens’it Discovery
+
+Sigfox technology uses ultra-narrowband communication to transmit small data packets over very long distances. The Sens’it Discovery device includes multiple sensors such as temperature, humidity, and motion sensors. It is mainly used for environmental monitoring and asset tracking with minimal energy usage.
+
+6. Bluetooth Low Energy (BLE) Beacon
+
+Manufacturer: Kontakt.io
+Product: Smart Beacon 2
+
+BLE beacons are small devices that broadcast signals to nearby smartphones or receivers. They are commonly used for indoor navigation, proximity detection, and asset tracking. The Smart Beacon 2 features a dual-battery system, providing a long operational lifetime and support for standard beacon formats.
+
+7. Ultra-Wideband (UWB) Transceiver
+
+Manufacturer: Qorvo
+Product: DW3110
+
+UWB transceivers enable very accurate distance and position measurements, often within a few centimeters. The Qorvo DW3110 is designed for low-power operation and is widely used in automotive systems, mobile devices, and tracking applications that require precise location data.
+
+8. Wi-Fi 6E Access Point
+
+Manufacturer: Aruba (HPE)
+Product: Aruba 630 Series
+
+Wi-Fi 6E access points extend Wi-Fi 6 technology by operating in the 6 GHz frequency band. This reduces network congestion and improves performance in enterprise environments. The Aruba 630 Series provides tri-band connectivity and advanced filtering to minimize interference.
+
+9. 5G IoT Module
+
+Manufacturer: Telit Cinterion
+Product: FN990A Series
+
+5G IoT modules are designed for applications that require very high data rates and low latency. The Telit FN990A series supports global 5G Sub-6 deployments and complies with the latest 3GPP standards. These modules are suitable for advanced applications such as industrial automation and video surveillance.
+
+Conclusion
+
+This assignment demonstrates how different wireless technologies are implemented in commercial products. Each product serves a specific purpose based on range, data rate, power consumption, and application requirements. Understanding these technologies helps in selecting the appropriate wireless solution for real-world systems.
