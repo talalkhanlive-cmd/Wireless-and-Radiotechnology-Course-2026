@@ -1,23 +1,23 @@
-Thermal Noise Simulation and Evaluation
+Thermal Noise Simulation and Study
 Objective
 
-This project uses MATLAB to model and examine thermal noise, illustrating its behavior in both the time domain and frequency domain through Power Spectral Density (PSD) analysis.
+This project focuses on modeling and examining thermal noise using MATLAB. The behavior of thermal noise is demonstrated in both the time domain and the frequency domain through Power Spectral Density (PSD) analysis.
 
 Prerequisites
 
 MATLAB
 
-Signal Processing Toolbox (required for the pwelch function)
+Signal Processing Toolbox (required for using the pwelch function)
 
-How to Use
+How to Run the Simulation
 
-Clone or download this repository to your local system.
+Clone or download the repository to your computer.
 
 Open the main MATLAB script (for example, thermal_noise.m).
 
-Execute the script to run the simulation and display the generated plots.
+Execute the script to perform the simulation and display the corresponding plots.
 
-Default Simulation Parameters
+Default Simulation Settings
 
 Bandwidth (B): 1 MHz
 
@@ -40,10 +40,10 @@ Simulation Output
 
 Thermal Noise Simulation Results
 
-Observations and Analysis
+Observations and Discussion
 
-Time-Domain Behavior:
-The script produces Additive White Gaussian Noise (AWGN) with a random amplitude distribution and zero mean. The voltage fluctuations are proportional to
+Time-Domain Analysis:
+The simulation produces Additive White Gaussian Noise (AWGN) with a randomly varying amplitude and zero mean. The observed voltage fluctuations are proportional to
 
 4
 𝑘
@@ -51,13 +51,13 @@ The script produces Additive White Gaussian Noise (AWGN) with a random amplitude
 𝑅
 𝐵
 4kTRB,
-reflecting the dependence of thermal noise on system parameters.
+illustrating the dependence of thermal noise power on physical system parameters.
 
 Frequency-Domain (PSD) Analysis:
-The power spectral density remains flat across the frequency range, confirming that thermal noise has a uniform power distribution over bandwidth.
+The power spectral density is flat across the frequency range, confirming that thermal noise distributes its power uniformly over bandwidth.
 
-Effect of Parameter Variation:
+Effect of Parameter Changes:
 
-Bandwidth: Increasing the bandwidth raises the overall noise variance in the time domain while keeping the PSD level constant.
+Bandwidth: Adjusting the bandwidth changes the overall noise variance in the time domain while leaving the PSD level unchanged.
 
-Resistance and Temperature: Higher resistance or temperature increases both the amplitude of the time-domain noise and the constant power level observed in the PSD plot.
+Resistance and Temperature: Increasing either resistance or temperature results in higher noise amplitude in the time domain and a higher constant power level in the PSD plot.
