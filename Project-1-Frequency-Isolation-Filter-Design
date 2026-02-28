@@ -1,0 +1,16 @@
+Project-1-Frequency-Isolation-Filter-Design/
+│
+├── README.md
+├── matlab/
+│   ├── composite_signal.m
+│   ├── lpf_100hz.m
+│   ├── bpf_200hz.m
+│   ├── bpf_300hz.m
+│   ├── hpf_400hz.m
+│   └── bsf_100_400hz.m
+│
+├── figures/
+│   ├── input_signal.png
+│   ├── output_100hz.png
+│   ├── output_200hz.png
+│   └── spectrum_plots.png
