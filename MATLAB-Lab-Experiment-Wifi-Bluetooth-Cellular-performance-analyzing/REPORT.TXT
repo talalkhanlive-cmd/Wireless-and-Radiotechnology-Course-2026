@@ -1,0 +1,46 @@
+Wireless Communication Performance Comparison
+Objective
+
+This project performs a comparative analysis of three common wireless communication technologies: WiFi (IEEE 802.11b), Bluetooth, and 2G Cellular (GSM). Through simulation, the study examines how increasing distance affects received signal strength, signal-to-noise ratio (SINR), and channel capacity for each system.
+
+Repository Contents
+
+MATLAB_Lab_Experiment.m
+MATLAB script that defines the system parameters, implements theoretical models such as the Friis Transmission Equation and the Shannon–Hartley capacity formula, and generates comparative performance plots.
+
+report.txt
+A concise report discussing physical-layer behavior and highlighting the engineering trade-offs among the three wireless technologies.
+
+Comparative_Graph.png
+Screenshot displaying the simulation results for all technologies.
+(File name may differ depending on how the image is saved.)
+
+Simulation Results Overview
+
+The simulation evaluates WiFi, Bluetooth, and Cellular performance across their typical operating distance ranges. A logarithmic distance scale is used to clearly show differences in behavior over short and long distances.
+
+Comparative Performance Plot
+
+Key Results
+
+Received Power and Propagation Loss
+Each technology shows a logarithmic decrease in received power as distance increases. Cellular communication sustains higher received power over extended distances due to its high transmit power (40 W) and lower carrier frequency (850 MHz).
+
+Channel Capacity (Effect of Bandwidth)
+WiFi provides the highest channel capacity because of its large 22 MHz bandwidth. In comparison, 2G Cellular achieves the lowest capacity despite high transmit power, as its performance is limited by a narrow 200 kHz bandwidth.
+
+Technology Trade-offs
+
+Cellular: Optimized for wide-area coverage at the expense of data rate.
+
+WiFi: Offers a compromise between reasonable coverage (around 100 m) and high throughput.
+
+Bluetooth: Focuses on very low power consumption (approximately 10 mW), resulting in reduced range and data capacity for short-distance connections.
+
+Running the Simulation
+
+Verify that MATLAB is installed on your computer.
+
+Clone or download the repository to your local system.
+
+Open communication_assignment.m in MATLAB and run the script to generate the performance graphs.
