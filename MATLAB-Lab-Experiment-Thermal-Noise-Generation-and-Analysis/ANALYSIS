@@ -1,0 +1,63 @@
+Thermal Noise Simulation and Examination
+Objective
+
+This project aims to model and study thermal noise using MATLAB. The characteristics of thermal noise are demonstrated in both the time domain and the frequency domain through Power Spectral Density (PSD) analysis.
+
+Prerequisites
+
+MATLAB
+
+Signal Processing Toolbox (required for the pwelch function)
+
+How to Use
+
+Clone or download the repository to your local system.
+
+Open the main MATLAB script (for example, thermal_noise.m).
+
+Run the script to execute the simulation and display the generated plots.
+
+Default System Parameters
+
+Bandwidth (B): 1 MHz
+
+Resistance (R): 100 ohms
+
+Temperature (T): 300 K
+
+Boltzmann Constant (k):
+
+1.38
+×
+10
+−
+23
+1.38×10
+−23
+ J/K
+
+Simulation Output
+
+Thermal Noise Simulation Results
+
+Observations and Findings
+
+Time-Domain Behavior:
+The simulation produces Additive White Gaussian Noise (AWGN) with a randomly varying amplitude and zero mean. The voltage fluctuations are proportional to
+
+4
+𝑘
+𝑇
+𝑅
+𝐵
+4kTRB,
+showing the dependence of thermal noise on physical parameters.
+
+PSD Analysis:
+The power spectral density remains flat across the frequency range, confirming that thermal noise power is uniformly distributed over bandwidth.
+
+Effect of Parameter Variation:
+
+Bandwidth: Changing the bandwidth modifies the overall noise variance in the time domain while keeping the PSD level unchanged.
+
+Resistance and Temperature: Increasing either resistance or temperature increases both the time-domain noise amplitude and the constant power level observed in the PSD plot.
