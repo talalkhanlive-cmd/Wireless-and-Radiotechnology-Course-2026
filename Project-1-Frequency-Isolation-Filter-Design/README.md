@@ -1,10 +1,10 @@
-Frequency Component Isolation Using Analog Filters
+Frequency Isolation Using Analog Filter Design
 
-This repository outlines the design requirements for separating individual frequency components from a composite signal through the use of different analog filter configurations.
+This repository describes the design approach used to separate individual frequency components from a combined signal by applying different types of analog filters.
 
 Signal Description
 
-The input waveform is composed of four sinusoidal components and can be expressed as:
+The input waveform is composed of four sinusoidal signals and is defined as:
 
 𝑉
 𝑖
@@ -67,7 +67,7 @@ where the frequency components are:
 f=100, 200, 300, 400 Hz
 Filter Design Requirements
 
-The table below specifies the appropriate filter type and cutoff frequency (or frequency range) required to extract the desired signal components.
+The table below summarizes the appropriate filter selection and cutoff frequency values needed to extract the required frequency components from the input signal.
 
 Frequency Component(s)	Filter Type	Cutoff Frequency / Range
 100 Hz	Low Pass Filter (LPF)	150 Hz
@@ -82,10 +82,10 @@ Frequency Component(s)	Filter Type	Cutoff Frequency / Range
 Implementation Guidelines
 
 Cutoff Frequency Selection:
-Cutoff values are chosen at the midpoint between the target frequency and the nearest unwanted component to achieve effective attenuation and clean separation.
+Cutoff frequencies are chosen midway between the target frequency and the closest unwanted component to achieve effective suppression of undesired signals.
 
 Filter Order Considerations:
-To obtain sharper frequency discrimination and reduce overlap, higher-order filters such as Butterworth or Chebyshev designs are recommended.
+To achieve sharper frequency separation and reduce overlap between components, higher-order filters such as Butterworth or Chebyshev designs are recommended.
 
 Use of Band-Stop Filter:
-A Band Stop (notch) filter is specifically applied in the 100 Hz and 400 Hz case to suppress the intermediate 200 Hz and 300 Hz components.
+The Band Stop (or notch) filter is specifically applied in the 100 Hz and 400 Hz case to remove interference from the intermediate 200 Hz and 300 Hz frequency components.
