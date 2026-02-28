@@ -1,0 +1,93 @@
+
+Overview
+
+This assignment presents an analysis of a wireless RF link using RF Planning Studio. By adjusting several key parameters in a MATLAB-based simulation, the effects on link range, received signal power, and Fresnel zone clearance are examined.
+
+Simulation Output
+
+RF Planning Studio – Effect of Antenna Gain and Environment
+
+1️⃣ Increasing Gateway Height by +5 m
+
+Does the maximum LOS distance change?
+Yes. Increasing the gateway height extends the maximum Line-of-Sight distance from approximately 21.1 km to 23.2 km.
+
+Does this noticeably improve link feasibility?
+From a purely mathematical perspective using the log-distance path loss model, the improvement is relatively small. However, from a practical deployment point of view, the improvement is significant.
+
+Reasoning
+The radio horizon is mainly determined by the relationship
+
+𝑑
+𝑚
+𝑎
+𝑥
+≈
+3.57
+(
+ℎ
+𝑡
+𝑥
++
+ℎ
+𝑟
+𝑥
+)
+d
+max
+	​
+
+≈3.57(
+h
+tx
+	​
+
+	​
+
++
+h
+rx
+	​
+
+	​
+
+)
+
+Raising the gateway antenna increases the distance before the signal is blocked by Earth curvature or surrounding terrain and clutter. This leads to much better real-world clearance and improves the likelihood of maintaining a reliable physical link.
+
+2️⃣ Increasing Antenna Gain to 5 dBi
+
+How does the received power curve change?
+The received power curve shifts upward by approximately 6 dB across the entire distance range when compared to the original configuration.
+
+How much additional coverage is obtained?
+The usable range, defined as the distance where the signal remains above the –120 dBm sensitivity threshold, increases notably—from about 6.5 km to beyond 10 km.
+
+Why does antenna gain increase coverage?
+Antenna gain does not generate extra transmit power. Instead, it concentrates the radiated energy more effectively in the desired direction. By increasing both the transmitter and receiver antenna gains to 5 dBi, the total link budget improves by 6 dB, raising the received power level and extending the effective communication range.
+
+3️⃣ Changing the Environment Exponent (n)
+
+Effect of increasing the path loss exponent
+When the environment exponent is increased from n = 2.7 to n = 3.5, the received power decreases much more rapidly with distance. As a result, the signal reaches the sensitivity limit at a significantly shorter distance, around 3.5 km.
+
+Which factor impacts range more: antenna gain or environment?
+The environment exponent has a far greater influence on link range than the antenna gain increase.
+
+Physical explanation
+The path loss exponent represents how strongly the environment attenuates the radio signal. In open or lightly obstructed areas, signal propagation is relatively predictable. In dense or cluttered environments, radio waves experience increased absorption, reflections, and multipath effects. Since this loss increases exponentially with distance, environmental degradation can quickly outweigh any fixed improvements gained from antenna hardware.
+
+4️⃣ Gateway Relocation and Fresnel Zone Analysis
+
+Where is the Fresnel zone radius largest?
+The maximum Fresnel zone radius occurs at the midpoint of the link, located at 0.5D between the transmitter and receiver.
+
+Why is the midpoint critical?
+The Fresnel zone forms a three-dimensional ellipsoidal shape around the direct LOS path. The widest portion of this ellipsoid is located exactly at the midpoint, making this location the most sensitive to obstruction by terrain or objects.
+
+Impact of violating the 60% clearance rule
+If more than 40% of the first Fresnel zone is obstructed, diffraction losses occur. These obstructions disturb the propagation of electromagnetic waves and can severely reduce signal strength, even when visual line of sight between antennas still exists.
+
+Final Conclusion
+
+This analysis highlights that successful RF link design depends on both controllable system parameters and unavoidable environmental factors. While increasing antenna gain provides a clear and linear improvement to the link budget, the propagation environment—represented by the path loss exponent—plays a dominant role and can rapidly limit coverage. In addition, a positive theoretical link budget alone is insufficient without adequate Fresnel zone clearance. Proper antenna height selection and avoidance of midpoint obstructions are essential to prevent diffraction losses and ensure long-term link reliability.
