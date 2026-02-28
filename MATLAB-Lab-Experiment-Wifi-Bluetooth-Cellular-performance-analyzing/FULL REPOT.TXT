@@ -1,0 +1,49 @@
+% =========================================================================
+% WIRELESS COMMUNICATION PERFORMANCE EVALUATION
+% =========================================================================
+%
+% --- COMPARATIVE STUDY SUMMARY ---
+%
+% 1. SIMULATION DESCRIPTION
+% This MATLAB script evaluates and compares the physical-layer behavior of
+% WiFi (IEEE 802.11b), Bluetooth, and 2G Cellular (GSM) communication systems.
+% The analysis uses the Friis Transmission Formula to compute received power
+% and the Shannon–Hartley theorem to estimate channel capacity.
+%
+% 2. PERFORMANCE ANALYSIS & OBSERVATIONS
+% * Received Power and Propagation Loss:
+%   All three wireless technologies exhibit a logarithmic reduction in
+%   received power as transmission distance increases, consistent with
+%   free-space propagation theory. Cellular communication sustains higher
+%   received power across longer distances due to its very high transmit
+%   power (40 W) and lower carrier frequency (850 MHz).
+%
+% * Signal-to-Interference-plus-Noise Ratio (SINR):
+%   Since noise power (Pn) is assumed constant, the SINR trends follow the
+%   received power curves. Bluetooth experiences a rapid SINR degradation
+%   because of its low transmit power (10 mW), limiting its effective range
+%   to short distances.
+%
+% * Channel Capacity Characteristics:
+%   - WiFi delivers the highest channel capacity owing to its large bandwidth
+%     (22 MHz) combined with moderate transmit power.
+%   - Bluetooth offers the lowest capacity due to its narrow bandwidth
+%     (2 MHz) and low power operation, making it suitable only for short-range,
+%     low-data-rate applications.
+%   - Cellular systems, despite their high transmit power, achieve relatively
+%     low channel capacity because of the strict bandwidth limitation
+%     (200 kHz). This reflects the design focus of 2G systems on coverage and
+%     voice communication rather than high-speed data.
+%
+% 3. CONCLUSIONS
+% The simulation results emphasize fundamental trade-offs in wireless system
+% design:
+% - Coverage versus Throughput: Cellular systems prioritize long-range
+%   connectivity at the expense of data rate, while WiFi emphasizes higher
+%   throughput over shorter distances.
+% - Power Efficiency versus Performance: Bluetooth minimizes power usage to
+%   extend battery life, which results in reduced range and channel capacity.
+%
+% =========================================================================
+% MATLAB SCRIPT IMPLEMENTATION
+% =========================================================================
